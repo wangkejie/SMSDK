@@ -18,6 +18,11 @@
   "platforms": {
     "ios": "8.0"
   },
+  "source_files": "SMSDK/Classes/**/*",
+  "public_header_files": [
+    "SMSDK/Classes/KJHybrid/KJHybridHeader.h",
+    "SMSDK/Classes/KJHybrid/KJHybridContent/KJHybridViewController.h"
+  ],
   "frameworks": [
     "UIKit",
     "MapKit"
