@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SMSDK'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = '树米 SDK'
 
 # This description is used to generate tags and improve search results.
@@ -22,26 +22,27 @@ Pod::Spec.new do |s|
 
                        DESC
 
-  s.homepage         = 'http://kejie@git.showmac.cn/kejie/SMSDK.git'
+s.homepage         = 'http://www.showmac.cn'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Jack' => '727881945@qq.com' }
-  s.source           = { :git => 'http://kejie@git.showmac.cn/kejie/SMSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/wangkejie/SMSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SMSDK/Classes/**/*'
+#s.source_files = 'SMSDK/Classes/**/*'
   
   # s.resource_bundles = {
   #   'SMSDK' => ['SMSDK/Assets/*.png']
   # }
 
-    s.public_header_files = ['SMSDK/Classes/KJHybrid/KJHybridHeader.h',
-                            'SMSDK/Classes/KJHybrid/KJHybridContent/KJHybridViewController.h']
+#s.public_header_files = ['SMSDK/Classes/KJHybrid/KJHybridHeader.h',
+#'SMSDK/Classes/KJHybrid/KJHybridContent/KJHybridViewController.h']
 
     s.frameworks = 'UIKit', 'MapKit'
     s.dependency 'AFNetworking'
     s.dependency 'MBProgressHUD'
+    s.vendored_frameworks = 'SMSDK.framework'
 
 end
